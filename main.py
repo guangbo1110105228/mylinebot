@@ -20,10 +20,9 @@ import json
 
 app = Flask(__name__)
 # LINE BOT info
-line_bot_api = LineBotApi('c9tPtf0Jgx8uvetrY38NO2zN2xy6m1jUVKkBmNdybbeiHgfgTQuaenNYNOVi6sbK+wAKih8OjUnLVQAyk//4ilJie0vAadlRwHg2xEVyrxlL/ASD7sa6QUJYImYMnMG8H1WGuaCNFYvuCr4kEj2BPQdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('688603be172522153e28306197333722')
-openai.api_key = ('sk-proj-W7y6ruWPwwALgjkqpvi9T3BlbkFJar36bApbgvH9lijGGtQa')
-
+line_bot_api = LineBotApi('Channel Access Token')
+handler = WebhookHandler('Channel Secret')
+openai.api_key = ('YOUR_OPENAI_API_KEY')
 
 
 def GPT_response(text):
