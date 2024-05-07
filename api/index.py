@@ -38,11 +38,11 @@ def handle_follow(event):
 
     # Send three JSON files to the user
     try:
-        with open('tofel.json', 'r', encoding='utf-8') as file:
+        with open('../tofel.json', 'r', encoding='utf-8') as file:
             content1 = json.load(file)
-        with open('bigexam.json', 'r', encoding='utf-8') as file:
+        with open('../bigexam.json', 'r', encoding='utf-8') as file:
             content2 = json.load(file)
-        with open('ielts.json', 'r', encoding='utf-8') as file:
+        with open('../ielts.json', 'r', encoding='utf-8') as file:
             content3 = json.load(file)
 
         line_bot_api.push_message(user_id, [
@@ -76,7 +76,7 @@ def handle_message(event):
 
     try:
         if message == 'HI':
-            with open('tofel.json', 'r', encoding='utf-8') as file:
+            with open('../tofel.json', 'r', encoding='utf-8') as file:
                 FlexMessage = json.load(file)
             line_bot_api.reply_message(reply_token, FlexSendMessage('Profile Card', FlexMessage))
         else:
