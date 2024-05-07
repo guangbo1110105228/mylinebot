@@ -13,9 +13,9 @@ import os
 logging.basicConfig(level=logging.INFO)
 
 # LINE BOT info
-line_bot_api = LineBotApi(os.getenv('LINE_CHANNEL_ACCESS_TOKEN'))
-handler = WebhookHandler(os.getenv('LINE_CHANNEL_SECRET'))
-openai.api_key = os.getenv('OPENAI_API_KEY')
+line_bot_api = LineBotApi('kWEiBIJ2Wmv6+ork0tozb2A1v49HfxQxeLbmQZK3lNB/YYmHJ21AR8CO+BUMFc5n+wAKih8OjUnLVQAyk//4ilJie0vAadlRwHg2xEVyrxl+Hxh+ujzf3FwbBvQ96m2YCVK0t7KSKJjtB/HPPxza/AdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('c0a0777fc50718d93cb976c2cb83a5e3')
+openai.api_key = ('sk-proj-W7y6ruWPwwALgjkqpvi9T3BlbkFJar36bApbgvH9lijGGtQa')
 
 app = Flask(__name__)
 
