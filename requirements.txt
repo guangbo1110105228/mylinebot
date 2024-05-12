@@ -1,4 +1,4 @@
-flask
-line-bot-sdk
-openai<1.0.0
-gunicorn
+Flask==2.1.2
+line-bot-sdk==2.0.1
+openai==0.10.2
+
