@@ -10,4 +10,4 @@ openai = "<1.0.0"
 gunicorn = "*"
 
 [requires]
-python_version = "3.9.16"
+python_version = "3.9.0"
