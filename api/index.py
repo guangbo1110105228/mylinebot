@@ -55,7 +55,7 @@ def handle_message(event):
     reply_token = event.reply_token
     message = event.message.text
     if message == 'HI':
-        with open('tofel.json', 'r', encoding='utf-8') as file:
+        with open(os.path.join('api', 'tofel.json'), 'r', encoding='utf-8') as file:
             flex_message = json.load(file)
         line_bot_api.reply_message(reply_token, FlexSendMessage('Profile Card', flex_message))
     else:
@@ -65,4 +65,5 @@ def handle_message(event):
 if __name__ == "__main__":
     port = int(os.getenv('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
+
 
