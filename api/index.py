@@ -4,7 +4,6 @@ from linebot.exceptions import InvalidSignatureError
 from linebot.models import *
 import json
 import openai
-import traceback
 import logging
 import os
 
